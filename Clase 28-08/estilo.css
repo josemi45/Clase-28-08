@@ -1,0 +1,187 @@
+/* *{} sirve para asignar un estilo a toda la página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin: auto;
+}
+
+.menu ul {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    list-style-type: none;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 15px;
+    display: inline-block;
+}
+.menu ul a:hover{
+    color: red;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.menu ul li:hover{
+    background-color: rgb(43, 42, 42);
+}
+.text-hero {
+    /* deja el texto centrado */
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    /* background-image permite mostrar imagen de fondo */
+    background-image: linear-gradient(rgba(97, 94, 233, 0.5), rgba(0, 0, 0, 0.5)),
+        url(imgs/img-hero.jpg);
+    width: 100%;
+    height: 650px;
+    /* background-repeat permite definir como se repite o no la imagen  */
+    background-repeat: no-repeat;
+    /* background-size permite definir el tamaño de la imagen */
+    background-size: cover;
+    /* background-position determina la posición de la imagen */
+    background-position: center;
+    /* background-attachment:fixed permite mover el scroll */
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.text-60 {
+    /* font size sirve para el tamaño de letra */
+    font-size: 60px;
+}
+
+.text-30 {
+    font-size: 30px;
+}
+
+/* información */
+.informacion {
+    background-color: beige;
+    color: black;
+}
+
+.contenedor {
+    width: 90%;
+    padding: 80px 50px;
+    margin: auto;
+}
+
+.titulo-info {
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.text-info {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* servicios */
+.contenedor-servicios {
+    /* estable la visualización interna y externa de un elemento */
+    display: flex;
+    width: 100%;
+    /* define como el navegador distribuye el espacio entre los items y los alrededores */
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 25%;
+    height: 200px;
+    border-radius: 2%;
+    text-align: center;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    /* es la posición en que se muestra en el plano 2d */
+    transform: scale(1);
+    /* el tiempo que se demora */
+    transition: transform 0.7s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.5);
+}
+
+/* donde este la class card y contenga una etiqueta i se aplicará el estilo */
+.card i {
+    font-size: 40px;
+    color: red;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.galeria {
+    background-color: antiquewhite;
+}
+
+.galeria-contenido {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galeria-contenido>img {
+    width: 30%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.galeria-contenido>img:hover {
+    transform: scale(-1);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 3px;
+}
+
+.footer li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer i {
+    color: red;
+}
+
+.footer li:hover {
+    color: red;
+}
+
+.footer a:hover {
+    color: red;
+}
